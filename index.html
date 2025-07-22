@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XZenPress - Acupressão e Bem-estar Natural</title>
+    <meta name="description" content="Técnicas de acupressão e medicina tradicional chinesa para alívio natural da dor">
+    
+    <!-- PWA Meta Tags -->
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#059669">
+    <link rel="apple-touch-icon" href="/icon-192.png">
+    
+    <!-- TailwindCSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <style>
+        .breathing-animation {
+            animation: breathe 8s infinite;
+        }
+        
+        @keyframes breathe {
+            0%, 100% { transform: scale(1); }
+            12.5% { transform: scale(1.1); }
+            50% { transform: scale(1.1); }
+            87.5% { transform: scale(1); }
+        }
+        
+        .technique-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 min-h-screen">
+    <!-- Navigation -->
+    <nav class="bg-emerald-600 text-white p-4 shadow-lg">
+        <div class="container mx-auto text-center">
+            <h1 class="text-3xl font-bold">🧘‍♀️ XZenPress</h1>
+            <p class="text-emerald-100">Acupressão e Bem-estar Natural</p>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="bg-gradient-to-br from-emerald-500 to-emerald-700 text-white py-16">
+        <div class="container mx-auto text-center px-4">
+            <h2 class="text-5xl font-bold mb-4">XZenPress</h2>
+            <p class="text-xl mb-8">Técnicas Milenares para Alívio Natural da Dor</p>
+            <p class="text-lg mb-8 max-w-2xl mx-auto">
+                Descubra o poder da Medicina Tradicional Chinesa com técnicas de acupressão 
+                para dores de cabeça, estresse, problemas digestivos e fortalecimento da imunidade.
+            </p>
+        </div>
+    </div>
+
+    <!-- Mental Health Section -->
+    <div class="container mx-auto py-16 px-4">
+        <div class="text-center mb-12">
+            <h3 class="text-3xl font-bold text-gray-800 mb-4">🧠 Promoção da Saúde Mental</h3>
+            <p class="text-lg text-gray-600">Técnica de respiração 4-7-8 para relaxamento profundo</p>
+        </div>
+
+        <div class="max-w-md mx-auto bg-white rounded-2xl shadow-xl p-8 text-center">
+            <div class="w-48 h-48 mx-auto mb-6 bg-gradient-to-br from-emerald-400 to-emerald-600 rounded-full flex items-center justify-center text-white text-lg font-semibold breathing-animation">
+                Respire
+            </div>
+            
+            <div class="text-lg font-medium text-gray-700 mb-4">
+                Inspire 4s → Segure 7s → Expire 8s
+            </div>
+            
+            <button onclick="alert('Funcionalidade em desenvolvimento!')" 
+                    class="bg-emerald-600 text-white px-6 py-3 rounded-full hover:bg-emerald-700 transition-colors">
+                Iniciar Exercício de Respiração
+            </button>
+        </div>
+    </div>
+
+    <!-- Techniques Section -->
+    <div class="container mx-auto py-16 px-4">
+        <h3 class="text-3xl font-bold text-center text-gray-800 mb-12">🎯 Técnicas de Acupressão</h3>
+        
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Yintang -->
+            <div class="technique-card bg-white rounded-xl shadow-lg p-6 transition-all duration-300 cursor-pointer">
+                <div class="text-6xl mb-4 text-center">🎯</div>
+                <h4 class="text-xl font-semibold mb-2">Yintang (EX2)</h4>
+                <p class="text-gray-600 mb-4">Ponto entre as sobrancelhas para dor de cabeça, ansiedade e insônia</p>
+                <button onclick="startTimer('Yintang')" 
+                        class="bg-emerald-600 text-white px-4 py-2 rounded-lg hover:bg-emerald-700 transition-colors w-full">
+                    Timer 60s
+                </button>
+            </div>
+            
+            <!-- Zusanli -->
+            <div class="technique-card bg-white rounded-xl shadow-lg p-6 transition-all duration-300 cursor-pointer">
+                <div class="text-6xl mb-4 text-center">🦵</div>
+                <h4 class="text-xl font-semibold mb-2">Zusanli (ST36)</h4>
+                <p class="text-gray-600 mb-4">Ponto da longevidade, fortalece imunidade e energia vital</p>
+                <button onclick="startTimer('Zusanli')" 
+                        class="bg-emerald-600 text-white px-4 py-2 rounded-lg hover:bg-emerald-700 transition-colors w-full">
+                    Timer 60s
+                </button>
+            </div>
+            
+            <!-- Hegu -->
+            <div class="technique-card bg-white rounded-xl shadow-lg p-6 transition-all duration-300 cursor-pointer">
+                <div class="text-6xl mb-4 text-center">👐</div>
+                <h4 class="text-xl font-semibold mb-2">Hegu (LI4)</h4>
+                <p class="text-gray-600 mb-4">Ponto da mão para dor de cabeça, tensão e problemas digestivos</p>
+                <button onclick="startTimer('Hegu')" 
+                        class="bg-emerald-600 text-white px-4 py-2 rounded-lg hover:bg-emerald-700 transition-colors w-full">
+                    Timer 60s
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Premium Section -->
+    <div class="bg-gray-100 py-16">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h3 class="text-3xl font-bold text-gray-800 mb-4">💎 XZenPress Premium</h3>
+                <p class="text-lg text-gray-600">Acesso completo a todas as técnicas avançadas</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <!-- Monthly -->
+                <div class="bg-white rounded-2xl shadow-xl p-8">
+                    <h4 class="text-2xl font-bold text-center mb-4">Plano Mensal</h4>
+                    <div class="text-center mb-6">
+                        <span class="text-4xl font-bold text-emerald-600">R$ 19,90</span>
+                        <span class="text-gray-600">/mês</span>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center">
+                            <span class="text-emerald-600 mr-2">✓</span>
+                            20+ técnicas avançadas
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-emerald-600 mr-2">✓</span>
+                            Timer personalizado
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-emerald-600 mr-2">✓</span>
+                            Histórico ilimitado
+                        </li>
+                    </ul>
+                    <button class="w-full bg-emerald-600 text-white py-3 rounded-lg font-semibold hover:bg-emerald-700 transition-colors">
+                        Assinar Mensal
+                    </button>
+                </div>
+                
+                <!-- Annual -->
+                <div class="bg-white rounded-2xl shadow-xl p-8 border-2 border-emerald-600 relative">
+                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-emerald-600 text-white px-4 py-1 rounded-full text-sm font-semibold">
+                        Mais Popular
+                    </div>
+                    <h4 class="text-2xl font-bold text-center mb-4">Plano Anual</h4>
+                    <div class="text-center mb-6">
+                        <span class="text-4xl font-bold text-emerald-600">R$ 159,00</span>
+                        <span class="text-gray-600">/ano</span>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center">
+                            <span class="text-emerald-600 mr-2">✓</span>
+                            Tudo do plano mensal
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-emerald-600 mr-2">✓</span>
+                            Protocolos personalizados
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-emerald-600 mr-2">✓</span>
+                            Suporte prioritário
+                        </li>
+                    </ul>
+                    <button class="w-full bg-emerald-600 text-white py-3 rounded-lg font-semibold hover:bg-emerald-700 transition-colors">
+                        Assinar Anual
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4 text-center">
+            <h3 class="text-2xl font-bold mb-4">XZenPress</h3>
+            <p class="text-gray-300 mb-6">Acupressão e bem-estar natural ao seu alcance</p>
+            
+            <div class="bg-amber-100 border border-amber-300 text-amber-800 p-4 rounded-lg inline-block mb-6">
+                <strong>⚠️ Aviso Médico:</strong> Este aplicativo é apenas educacional. 
+                Não substitui consulta médica profissional. Consulte sempre um profissional de saúde.
+            </div>
+            
+            <div class="space-x-6">
+                <a href="/privacy-policy.html" class="text-gray-300 hover:text-white">Política de Privacidade</a>
+                <a href="mailto:aleksayev@xzenpress.com" class="text-gray-300 hover:text-white">Contato</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function startTimer(technique) {
+            let timeLeft = 60;
+            const originalContent = event.target.textContent;
+            const button = event.target;
+            
+            button.textContent = `${technique}: ${timeLeft}s`;
+            button.disabled = true;
+            
+            const timer = setInterval(() => {
+                timeLeft--;
+                button.textContent = `${technique}: ${timeLeft}s`;
+                
+                if (timeLeft <= 0) {
+                    clearInterval(timer);
+                    button.textContent = '✓ Concluído!';
+                    button.style.backgroundColor = '#10b981';
+                    
+                    setTimeout(() => {
+                        button.textContent = originalContent;
+                        button.disabled = false;
+                        button.style.backgroundColor = '';
+                    }, 3000);
+                }
+            }, 1000);
+        }
+    </script>
+</body>
+</html>
